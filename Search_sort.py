@@ -1,5 +1,5 @@
 import pandas as pd
-import timeit
+import time
 
 # LOAD DATA
 def load_dataset(filename):
@@ -77,11 +77,11 @@ def quick_sort(arr):
 
 # EXECUTION TIME
 def execution_start():
-    start = timeit.default_timer()
+    start = time.time()
     return start
 
 def execution_stop():
-    stop = timeit.default_timer()
+    stop = time.time()
     return stop
 
 def execution_time(start, end):
@@ -93,7 +93,6 @@ def execution_time(start, end):
 df = load_dataset("diabetes.csv")
 
 while True:
-    timestart = execution_start()
     column_search = input("Choose a column to search (Glucose, Age, BMI, etc.): ").lower()
     if column_search == "glucose":
         column_search = "Glucose"
@@ -107,16 +106,27 @@ while True:
     else:
         print("Please input proper column.")
 
-value_search = float(input("Enter a value to search for: "))
-search_method = int(input("Choose search method:\n1. Linear Search\n2. Binary Search\nEnter choice: "))
+while True:
+    try:
+        value_search = float(input("Enter a value to search for: "))
+        if value_search is str:
+            raise Exception
+        else:
+            break
+    except Exception:
+        print("Please input a number.")
 
 while True:
-    if search_method == 2:
-        print(f"Sorting \"{column_search}\" column before Binary Search...")
-        df = df.sort_values(by=[column_search]).reset_index(drop=True)
-        break
+    search_method = int(input("Choose search method:\n1. Linear Search\n2. Binary Search\nEnter choice: "))
+    if search_method not in [1,2]:
+        print("Please input search method.")
     else:
-        print("Please choose a search method.")
+        break
+
+timestart = execution_start()
+if search_method == 2:
+    print(f"Sorting \"{column_search}\" column before Binary Search...")
+    df = df.sort_values(by=[column_search]).reset_index(drop=True)
 
 values = df[column_search].tolist()
 index = linear_search(values, value_search) if search_method == 1 else binary_search(values, value_search)
@@ -131,7 +141,6 @@ else:
     execution_time(timestart,timeend)
 
 while True:
-    timestart = execution_start()
     column_sort = input("Choose a column to search (Glucose, Age, BMI, etc.): ").lower()
     if column_sort == "glucose":
         column_sort = "Glucose"
@@ -153,6 +162,7 @@ while True:
         print("Please choose a sorting method.")
     else:
         break
+timestart = execution_start()
 sorted_values = sorting_algorithms[sort_method](df[column_sort].tolist())
 df[column_sort] = sorted_values
 
