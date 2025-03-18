@@ -112,8 +112,8 @@ search_method = int(input("Choose search method:\n1. Linear Search\n2. Binary Se
 
 while True:
     if search_method == 2:
-    print(f"Sorting \"{column_search}\" column before Binary Search...")
-    df = df.sort_values(by=[column_search]).reset_index(drop=True)
+        print(f"Sorting \"{column_search}\" column before Binary Search...")
+        df = df.sort_values(by=[column_search]).reset_index(drop=True)
     break
     else:
         print("Please choose a search method.")
