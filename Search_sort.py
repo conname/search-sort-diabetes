@@ -204,7 +204,7 @@ df[column_sort] = sorted_values
 
 print(f"Sorting by \"{column_sort}\" using {['Bubble Sort', 'Selection Sort', 'Insertion Sort', 'Quick Sort'][sort_method - 1]}...")
 print("Sorting completed.")
-df.to_csv("sorted-diabetes.csv", index=False)
+df.to_csv("test-sorted-diabetes.csv", index=False)
 timeend = execution_stop()
 print("Sorted data saved as \"sorted-diabetes.csv\".")
 execution_time(timestart,timeend)
