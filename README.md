@@ -14,7 +14,7 @@ Steps On How To Run The Program:
 3. Wait for program to finish.
 
 Screenshots:
-[Program_Start.png]
-[Searching_Run.png]
-[Sorting_Run.png]
-[Example_Run.gif]
+![Program_Start.png](https://github.com/conname/search-sort-diabetes/blob/main/Program_Start.png)
+![Searching_Run.png](https://github.com/conname/search-sort-diabetes/blob/main/Searching_Run.png)
+![Sorting_Run.png](https://github.com/conname/search-sort-diabetes/blob/main/Sorting_Run.png)
+![Example_Run.gif](https://github.com/conname/search-sort-diabetes/blob/main/Example_Run.gif)
