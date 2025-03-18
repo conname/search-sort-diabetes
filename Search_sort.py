@@ -110,11 +110,13 @@ while True:
 value_search = float(input("Enter a value to search for: "))
 search_method = int(input("Choose search method:\n1. Linear Search\n2. Binary Search\nEnter choice: "))
 
-if search_method == 2:
+while True:
+    if search_method == 2:
     print(f"Sorting \"{column_search}\" column before Binary Search...")
     df = df.sort_values(by=[column_search]).reset_index(drop=True)
-else:
-    print("Please choose a search method.")
+    break
+    else:
+        print("Please choose a search method.")
 
 values = df[column_search].tolist()
 index = linear_search(values, value_search) if search_method == 1 else binary_search(values, value_search)
