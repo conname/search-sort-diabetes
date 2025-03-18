@@ -4,7 +4,7 @@
 
 # Installation:
 
-Requirements: Python 3.x and above
+**Requirements:** Python 3.x and above
 1. Install Pandas using pip.
 ```
 pip install pandas
