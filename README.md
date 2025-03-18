@@ -5,8 +5,10 @@
 Installation:
 Requirements: Python 3.x and above
 1. Install Pandas using pip.
-```pip install pandas```
-2. Download the repository from [Releases](https://github.com/conname/search-sort-diabetes/releases/latest).
+```
+pip install pandas
+```
+3. Download the repository from [Releases](https://github.com/conname/search-sort-diabetes/releases/latest).
 
 Steps On How To Run The Program:
 1. Run `search_sort.py` in the same directory as `diabetes.csv`.
