@@ -9,6 +9,8 @@ Requirements: Python 3.x and above
 2. Download the repository from [Releases](https://github.com/conname/search-sort-diabetes/releases/latest).
 
 Steps On How To Run The Program:
-1. 
+1. Run `search_sort.py` in the same directory as `diabetes.csv`.
+2. Input properly as asked.
+3. Wait for program to finish.
 
 Screenshots:

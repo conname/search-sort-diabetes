@@ -103,6 +103,24 @@ while True:
     elif column_search == "bmi":
         column_search = "BMI"
         break
+    elif column_search == "pregnancies":
+        column_search = "Pregnancies"
+        break
+    elif column_search == "blood pressure":
+        column_search = "BloodPressure"
+        break
+    elif column_search == "skin thickness":
+        column_search = "SkinThickness"
+        break
+    elif column_search == "insulin":
+        column_search = "Insulin"
+        break
+    elif column_search == "diabetes pedigree function":
+        column_search = "DiabetesPedigreeFunction"
+        break
+    elif column_search == "outcome":
+        column_search = "Outcome"
+        break
     else:
         print("Please input proper column.")
 
@@ -150,6 +168,24 @@ while True:
         break
     elif column_sort == "bmi":
         column_sort = "BMI"
+        break
+    elif column_sort == "pregnancies":
+        column_sort = "Pregnancies"
+        break
+    elif column_sort == "blood pressure":
+        column_sort = "BloodPressure"
+        break
+    elif column_sort == "skin thickness":
+        column_sort = "SkinThickness"
+        break
+    elif column_sort == "insulin":
+        column_sort = "Insulin"
+        break
+    elif column_sort == "diabetes pedigree function":
+        column_sort = "DiabetesPedigreeFunction"
+        break
+    elif column_sort == "outcome":
+        column_sort = "Outcome"
         break
     else:
         print("Please input proper column.")
