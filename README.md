@@ -14,3 +14,7 @@ Steps On How To Run The Program:
 3. Wait for program to finish.
 
 Screenshots:
+[Program_Start.png]
+[Searching_Run.png]
+[Sorting_Run.png]
+[Example_Run.gif]
